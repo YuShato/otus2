@@ -130,4 +130,4 @@ dist
 
 .idea
 .jest
-storybook-static
+# storybook-static
