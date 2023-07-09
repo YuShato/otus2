@@ -4,14 +4,16 @@
   "description": "Start repo with required configuration",
   "main": "src/index.tsx",
   "author": "Yuliya Shatokhina",
-  "homepage": "https://yushato.github.io/",
+  "homepage": "https://github.com/YuShato/yushato.github.io/",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "jest src",
     "lint": "eslint src --fix",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "license": "MIT",
   "devDependencies": {
@@ -30,6 +32,7 @@
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
+    "@types/react-slick": "^0.23.10",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
     "babel-loader": "^9.1.2",
@@ -63,6 +66,7 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-slick": "^0.29.0",
