@@ -22,6 +22,7 @@ const Header = styled.header`
   top: 0;
   z-index: 1;
   left: 0;
+  background-color: #fff;
 
   @media (max-width: 1200px) {
     max-width: 100%;
